@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //Pages
+import NotfoundPage from "pages/notfound";
 import IndexPage from "pages/index";
 
 function Routess() {
@@ -20,7 +21,7 @@ function Routess() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="*" element={<>Not Found</>} />
+        <Route path="*" element={<NotfoundPage />} />
         <Route path="/" element={<IndexPage />} />
       </Routes>
     </BrowserRouter>
